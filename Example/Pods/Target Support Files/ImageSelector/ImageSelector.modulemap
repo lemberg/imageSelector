@@ -1,0 +1,6 @@
+framework module ImageSelector {
+  umbrella header "ImageSelector-umbrella.h"
+
+  export *
+  module * { export * }
+}

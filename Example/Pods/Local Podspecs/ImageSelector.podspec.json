@@ -1,0 +1,22 @@
+{
+  "name": "ImageSelector",
+  "version": "0.1.0",
+  "summary": "A short description of ImageSelector.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/overswift/ImageSelector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "overswift": "sergiy.loza@lemberg.co.uk"
+  },
+  "source": {
+    "git": "https://github.com/overswift/ImageSelector.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ImageSelector/Classes/**/*"
+}
