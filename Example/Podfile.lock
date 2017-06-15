@@ -4,11 +4,14 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ImageSelector (0.1.0)
+  - ImageSelector (0.1.0):
+    - PermissionsService
+  - PermissionsService (0.2.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - ImageSelector (from `../`)
+  - PermissionsService
 
 EXTERNAL SOURCES:
   ImageSelector:
@@ -16,8 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ImageSelector: 79951aa5f8cf92f2330ea11c531b39074bb5f686
+  ImageSelector: 6e5a98c23704d7272b11afc2d8f06d357e3699ea
+  PermissionsService: 7eca9477e83387d5e5ce6d7b12e00e04139b1104
 
-PODFILE CHECKSUM: f5540c428e08ef8345b52a35ccc11624083f4987
+PODFILE CHECKSUM: f4eae51ba23b3f88888073ac6e5e2f968605fa64
 
 COCOAPODS: 1.2.1

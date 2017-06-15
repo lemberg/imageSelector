@@ -1,11 +1,13 @@
+platform :ios, '9.0'
 use_frameworks!
 
 target 'ImageSelector_Example' do
+    
   pod 'ImageSelector', :path => '../'
-
+  pod 'PermissionsService'
+  
   target 'ImageSelector_Tests' do
     inherit! :search_paths
-
     pod 'FBSnapshotTestCase'
   end
 end

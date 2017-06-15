@@ -1,9 +1,9 @@
 {
   "name": "ImageSelector",
   "version": "0.1.0",
-  "summary": "A short description of ImageSelector.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/overswift/ImageSelector",
+  "summary": "Allow to quick add image selection from gallery or camera.",
+  "description": "Allow to quick add image selection from gallery or camera without any pain implementation.",
+  "homepage": "https://github.com/lemberg/imageSelector",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -16,7 +16,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "ImageSelector/Classes/**/*"
+  "source_files": "ImageSelector/Classes/**/*",
+  "dependencies": {
+    "PermissionsService": [
+
+    ]
+  }
 }
