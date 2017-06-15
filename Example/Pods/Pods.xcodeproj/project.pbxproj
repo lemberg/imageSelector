@@ -45,6 +45,8 @@
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = C048AA361B079D7A733E82CAF6BEDB77 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CE13B5761EF2AFB6003111A4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13B5751EF2AFB6003111A4 /* ImagePicker.swift */; };
 		CE13B5781EF2B035003111A4 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13B5771EF2B035003111A4 /* UIImage+FixOrientation.swift */; };
+		CE13B57A1EF2B615003111A4 /* ImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13B5791EF2B614003111A4 /* ImageSelector.swift */; };
+		CE13B57C1EF2B632003111A4 /* ImagePickerControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13B57B1EF2B632003111A4 /* ImagePickerControllerConfiguration.swift */; };
 		D2A1E8675F7E34BA9F774F40FB7B454B /* PermissionsService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C889FC405F310285235A298BB35614F8 /* PermissionsService-dummy.m */; };
 		D77D15D9A37757DE68D5A2EAE109BAF1 /* Pods-ImageSelector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B976B9974D9ACBF47885FF41E491EC89 /* Pods-ImageSelector_Tests-dummy.m */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 9805AFB9FDBA7FC0C97B01E70E63F158 /* FBSnapshotTestCasePlatform.m */; };
@@ -146,6 +148,8 @@
 		C889FC405F310285235A298BB35614F8 /* PermissionsService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PermissionsService-dummy.m"; sourceTree = "<group>"; };
 		CE13B5751EF2AFB6003111A4 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CE13B5771EF2B035003111A4 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
+		CE13B5791EF2B614003111A4 /* ImageSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelector.swift; sourceTree = "<group>"; };
+		CE13B57B1EF2B632003111A4 /* ImagePickerControllerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerControllerConfiguration.swift; sourceTree = "<group>"; };
 		CE14BDB25363C6C41F57D8A677F49884 /* CalendarEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEvent.swift; path = PermissionsService/Classes/CalendarEvent.swift; sourceTree = "<group>"; };
 		D11177FE68B501153243993FE6F5DC0B /* PermissionsService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionsService-prefix.pch"; sourceTree = "<group>"; };
 		D2CA70F193ABF049D3327030DC966B98 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -374,6 +378,8 @@
 			children = (
 				CE13B5771EF2B035003111A4 /* UIImage+FixOrientation.swift */,
 				CE13B5751EF2AFB6003111A4 /* ImagePicker.swift */,
+				CE13B5791EF2B614003111A4 /* ImageSelector.swift */,
+				CE13B57B1EF2B632003111A4 /* ImagePickerControllerConfiguration.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -616,8 +622,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE13B57C1EF2B632003111A4 /* ImagePickerControllerConfiguration.swift in Sources */,
 				CE13B5781EF2B035003111A4 /* UIImage+FixOrientation.swift in Sources */,
 				CE13B5761EF2AFB6003111A4 /* ImagePicker.swift in Sources */,
+				CE13B57A1EF2B615003111A4 /* ImageSelector.swift in Sources */,
 				011C6656C7DB644E7D0149B04F163310 /* ImageSelector-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

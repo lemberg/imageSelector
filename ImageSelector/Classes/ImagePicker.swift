@@ -9,64 +9,31 @@
 import UIKit
 import PermissionsService
 
-protocol ImageSelector: class {
-    
-    var presentingController:UIViewController? { get }
-    func imageSelected(_ image:UIImage)
-    func imageSelectionCanceled()
-    func imageDeleted()
-    func editingAllowed() -> Bool
-}
-
-protocol ImagePickerProtocol: class {
+public
+protocol ImagePicker: class {
     
     func showImageSources(_ withDeleteOption:Bool)
     func pickFromGallery()
     func pickFromCamera()
 }
 
-struct GalleryDefaultMessages: ServiceMessages {
+public struct GalleryDefaultMessages: ServiceMessages {
     
-    var restrictedTitle: String = "Restricted"
-    var restrictedMessage: String = "Access to gallery restricted"
-    var deniedTitle: String = "Denied"
-    var deniedMessage: String = "Access to gallery denied"
+    public var restrictedTitle: String = "Restricted"
+    public var restrictedMessage: String = "Access to gallery restricted"
+    public var deniedTitle: String = "Denied"
+    public var deniedMessage: String = "Access to gallery denied"
 }
 
-struct CameraDefaultMessages: ServiceMessages {
+public struct CameraDefaultMessages: ServiceMessages {
     
-    var restrictedTitle: String = "Restricted"
-    var restrictedMessage: String = "Access to camera restricted"
-    var deniedTitle: String = "Denied"
-    var deniedMessage: String = "Access to camera denied"
+    public var restrictedTitle: String = "Restricted"
+    public var restrictedMessage: String = "Access to camera restricted"
+    public var deniedTitle: String = "Denied"
+    public var deniedMessage: String = "Access to camera denied"
 }
 
-class ImagePickerControllerConfiguration {
-    
-    class var `default`:ImagePickerControllerConfiguration {
-        
-        let configuration = ImagePickerControllerConfiguration()
-        configuration.actionSheetTitle = "Select image"
-        configuration.actionSheetMessage = "Select image from proposed sources"
-        configuration.cameraActionTitle = "Take a photo"
-        configuration.galleryActionTitle = "Chose a photo"
-        configuration.removeActionTitle = "Remove a photo"
-        configuration.cameraActionTitle =  "Cancel"
-        return configuration
-    }
 
-    var actionSheetTitle: String?
-    var actionSheetMessage: String?
-    var cameraActionTitle: String?
-    var galleryActionTitle: String?
-    var removeActionTitle: String?
-    var cancelActionTitle: String?
-    var cameraMessages: ServiceMessages = CameraDefaultMessages()
-    var galleryMessages: ServiceMessages = GalleryDefaultMessages()
-    
-    var camera: UIImagePickerControllerCameraDevice = .front
-
-}
 
 extension UIViewController: ServiceDisplay {
     
@@ -75,18 +42,24 @@ extension UIViewController: ServiceDisplay {
     }
 }
 
-class ImagePickerController: NSObject, UINavigationControllerDelegate, ImagePickerProtocol {
+public class ImagePickerController: NSObject, UINavigationControllerDelegate, ImagePicker {
     
     fileprivate weak var imageSelector:ImageSelector?
     
     var configuration:ImagePickerControllerConfiguration
     
-    init(imageSelector:ImageSelector, configuration: ImagePickerControllerConfiguration = ImagePickerControllerConfiguration.default) {
-        self.imageSelector = imageSelector
-        self.configuration = configuration
+    private override init() {
+        self.configuration = ImagePickerControllerConfiguration.default
+        super.init()
     }
     
-    func showImageSources(_ showDeleteOption:Bool = false) {
+    public init(imageSelector:ImageSelector, configuration: ImagePickerControllerConfiguration = ImagePickerControllerConfiguration.default) {
+        self.imageSelector = imageSelector
+        self.configuration = configuration
+        super.init()
+    }
+    
+    public func showImageSources(_ showDeleteOption:Bool = false) {
         let controller = UIAlertController(title: configuration.actionSheetTitle, message: configuration.actionSheetMessage, preferredStyle: .actionSheet)
         
         let galleryAction = UIAlertAction(title: configuration.galleryActionTitle, style: .default) { (action) -> Void in
@@ -118,7 +91,7 @@ class ImagePickerController: NSObject, UINavigationControllerDelegate, ImagePick
     }
     
     
-    func pickFromGallery() {
+    public func pickFromGallery() {
         guard let controller = imageSelector?.presentingController else {
             assertionFailure("ViewController miss")
             return
@@ -132,7 +105,7 @@ class ImagePickerController: NSObject, UINavigationControllerDelegate, ImagePick
 
     }
     
-    func pickFromCamera() {
+    public func pickFromCamera() {
         guard let controller = imageSelector?.presentingController else {
             assertionFailure("ViewController miss")
             return
@@ -167,7 +140,7 @@ class ImagePickerController: NSObject, UINavigationControllerDelegate, ImagePick
 
 extension ImagePickerController: UIImagePickerControllerDelegate {
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         defer {
             self.imageSelector?.presentingController?.dismiss(animated: true, completion: nil)
         }
@@ -195,7 +168,7 @@ extension ImagePickerController: UIImagePickerControllerDelegate {
         imageSelector?.imageSelected(image)
     }
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.imageSelector?.presentingController?.dismiss(animated: true, completion: nil)
     }
 }
