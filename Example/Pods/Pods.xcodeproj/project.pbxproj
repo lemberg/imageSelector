@@ -23,7 +23,6 @@
 		3713EE7C1439ECEDF05F47BFAD5A63A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588D7A61B1518502A767CEFCD1E59B7 /* Foundation.framework */; };
 		3D0CCF15CF657ECFDF3E72539AD7224C /* Pods-ImageSelector_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE2FFF817E098CE324184CA5C88EE3D /* Pods-ImageSelector_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA746EEE7893833A3DE8133AC300EF5 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		44DCE2D971433DB2F6DB6D761C0F4635 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F71AF139042D88C9D636FFD59217C5D /* ReplaceMe.swift */; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95356DCA43FE458A2F59C6BEB3A986A2 /* FBSnapshotTestCase-dummy.m */; };
 		51B8C0661FB111F62BEC0CEADA94CBD4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536D557D51CADB7B52C771774D5CC94 /* Location.swift */; };
 		61CFE76F2C30922E3B716DD73BBC7EF4 /* Microphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FA41DCFC43DC2F16822925701F5F9 /* Microphone.swift */; };
@@ -44,6 +43,8 @@
 		BEA836507361E716298CAC0B9BF30D93 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1782E6D30B123261B8A79D390833E6C /* Contacts.swift */; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 021C2EDCCCEC5CF09409C79C5E32D6B8 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = C048AA361B079D7A733E82CAF6BEDB77 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CE13B5761EF2AFB6003111A4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13B5751EF2AFB6003111A4 /* ImagePicker.swift */; };
+		CE13B5781EF2B035003111A4 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13B5771EF2B035003111A4 /* UIImage+FixOrientation.swift */; };
 		D2A1E8675F7E34BA9F774F40FB7B454B /* PermissionsService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C889FC405F310285235A298BB35614F8 /* PermissionsService-dummy.m */; };
 		D77D15D9A37757DE68D5A2EAE109BAF1 /* Pods-ImageSelector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B976B9974D9ACBF47885FF41E491EC89 /* Pods-ImageSelector_Tests-dummy.m */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 9805AFB9FDBA7FC0C97B01E70E63F158 /* FBSnapshotTestCasePlatform.m */; };
@@ -113,7 +114,6 @@
 		723AFD29AE68A7E6AD76C56797E460A4 /* PermissionsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7650E28F55531EC599E800558F4EC899 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD50C12DB25BCFF76FEF7C303D141F7 /* Pods-ImageSelector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageSelector_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7F71AF139042D88C9D636FFD59217C5D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		8070D00D417FF3A56585C75A6B7068D5 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		83071C5A4B9C2CF32201EB2987C665E7 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		83619224406069A86FDBD80250088FC1 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +144,8 @@
 		C372C518995A7F2ED6B62891748FF067 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		C76B50E219F90061F2D66DA785252E59 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		C889FC405F310285235A298BB35614F8 /* PermissionsService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PermissionsService-dummy.m"; sourceTree = "<group>"; };
+		CE13B5751EF2AFB6003111A4 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CE13B5771EF2B035003111A4 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
 		CE14BDB25363C6C41F57D8A677F49884 /* CalendarEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEvent.swift; path = PermissionsService/Classes/CalendarEvent.swift; sourceTree = "<group>"; };
 		D11177FE68B501153243993FE6F5DC0B /* PermissionsService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionsService-prefix.pch"; sourceTree = "<group>"; };
 		D2CA70F193ABF049D3327030DC966B98 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -370,7 +372,8 @@
 		D007395E08D544E5BC9C8FEFB6C17BB6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7F71AF139042D88C9D636FFD59217C5D /* ReplaceMe.swift */,
+				CE13B5771EF2B035003111A4 /* UIImage+FixOrientation.swift */,
+				CE13B5751EF2AFB6003111A4 /* ImagePicker.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -613,8 +616,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE13B5781EF2B035003111A4 /* UIImage+FixOrientation.swift in Sources */,
+				CE13B5761EF2AFB6003111A4 /* ImagePicker.swift in Sources */,
 				011C6656C7DB644E7D0149B04F163310 /* ImageSelector-dummy.m in Sources */,
-				44DCE2D971433DB2F6DB6D761C0F4635 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
