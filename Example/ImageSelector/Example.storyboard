@@ -6,13 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="fSL-VC-TMI">
             <objects>
-                <viewController id="uVn-XL-YtQ" sceneMemberID="viewController">
+                <viewController id="uVn-XL-YtQ" customClass="ViewController" customModule="ImageSelector_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="beO-KY-Hio"/>
                         <viewControllerLayoutGuide type="bottom" id="8Tw-Hs-Cx1"/>
@@ -20,10 +22,46 @@
                     <view key="view" contentMode="scaleToFill" id="4gi-1P-fNQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8Q-bo-12a">
+                                <rect key="frame" x="24" y="28" width="327" height="174.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N8Q-bo-12a" secondAttribute="height" multiplier="15:8" id="OkX-iX-XLP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZsK-tY-Z3A" appends="YES" id="cuP-nn-Nt1"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-pO-t96">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <state key="normal" title="Select Photo"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="uVn-XL-YtQ" eventType="touchUpInside" id="fxy-Qd-lOc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KXd-pO-t96" secondAttribute="trailing" constant="20" id="1eK-jx-cuR"/>
+                            <constraint firstItem="N8Q-bo-12a" firstAttribute="top" secondItem="beO-KY-Hio" secondAttribute="bottom" constant="8" id="O8y-5o-5Xn"/>
+                            <constraint firstItem="8Tw-Hs-Cx1" firstAttribute="top" secondItem="KXd-pO-t96" secondAttribute="bottom" constant="20" id="Qbo-z6-f3z"/>
+                            <constraint firstItem="KXd-pO-t96" firstAttribute="leading" secondItem="4gi-1P-fNQ" secondAttribute="leading" constant="20" id="RSH-t0-89H"/>
+                            <constraint firstItem="N8Q-bo-12a" firstAttribute="leading" secondItem="4gi-1P-fNQ" secondAttribute="leadingMargin" constant="8" id="niP-6W-NKg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N8Q-bo-12a" secondAttribute="trailing" constant="8" id="sRd-mt-FJK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="N8Q-bo-12a" id="cII-cK-YeV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQv-IX-wKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ZsK-tY-Z3A">
+                    <connections>
+                        <action selector="handleLongPressWith:" destination="uVn-XL-YtQ" id="vvn-B9-4jS"/>
+                        <outlet property="delegate" destination="uVn-XL-YtQ" id="24J-7Z-U5a"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-351" y="104"/>
         </scene>

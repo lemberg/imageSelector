@@ -18,7 +18,7 @@ public class ImagePickerControllerConfiguration {
         configuration.cameraActionTitle = "Take a photo"
         configuration.galleryActionTitle = "Chose a photo"
         configuration.removeActionTitle = "Remove a photo"
-        configuration.cameraActionTitle =  "Cancel"
+        configuration.cancelActionTitle = "Cancel"
         return configuration
     }
     
