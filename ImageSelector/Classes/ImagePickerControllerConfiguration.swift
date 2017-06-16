@@ -1,9 +1,8 @@
 //
 //  ImagePickerControllerConfiguration.swift
-//  Pods
 //
 //  Created by Sergiy Loza on 15.06.17.
-//
+//  Copyright © 2016 Lemberg Solution. All rights reserved.
 //
 
 import Foundation

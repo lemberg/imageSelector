@@ -1,6 +1,5 @@
 //
 //  ImagePicker.swift
-//  StylesCloud
 //
 //  Created by Sergiy Loza on 29.08.16.
 //  Copyright © 2016 Lemberg Solution. All rights reserved.

@@ -3,7 +3,7 @@
 //  ImageSelector
 //
 //  Created by overswift on 06/15/2017.
-//  Copyright (c) 2017 overswift. All rights reserved.
+//  Copyright (c) 2017 Lemberg Solutions. All rights reserved.
 //
 
 import UIKit
