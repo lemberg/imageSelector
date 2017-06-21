@@ -25,7 +25,7 @@ Allow to quick add image selection from gallery or camera without any pain imple
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'overswift' => 'sergiy.loza@lemberg.co.uk' }
-  s.source           = { :git => 'https://github.com/overswift/ImageSelector.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lemberg/imageSelector.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

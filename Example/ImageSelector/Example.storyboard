@@ -34,14 +34,17 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-pO-t96">
-                                <rect key="frame" x="20" y="617" width="335" height="30"/>
-                                <state key="normal" title="Select Photo"/>
+                                <rect key="frame" x="20" y="608" width="335" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Select Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="selectImage:" destination="uVn-XL-YtQ" eventType="touchUpInside" id="fxy-Qd-lOc"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.60392156860000001" green="0.80000000000000004" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KXd-pO-t96" secondAttribute="trailing" constant="20" id="1eK-jx-cuR"/>
                             <constraint firstItem="N8Q-bo-12a" firstAttribute="top" secondItem="beO-KY-Hio" secondAttribute="bottom" constant="8" id="O8y-5o-5Xn"/>
