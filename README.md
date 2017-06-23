@@ -14,6 +14,7 @@ The simplest way to work with camera & photo library.
 1. [Installation](https://github.com/lemberg/imageSelector#installation)
 1. [How To Use](https://github.com/lemberg/imageSelector#how-to-use)
 1. [Customizing](https://github.com/lemberg/imageSelector#customizing) 
+1. [Example Project](https://github.com/lemberg/imageSelector#example-project) 
 1. [Author](https://github.com/lemberg/imageSelector#author)
 1. [License](https://github.com/lemberg/imageSelector#license)
 
@@ -23,6 +24,8 @@ The simplest way to work with camera & photo library.
 - [x] Permissions error handling 
 - [x] ActionsSheet creating, presenting and handling 
 - [x] Simple and fast implementing  
+- [x] Customising opportunity 
+- [x] Localizing opportunity for dialogue 
 
 ## Requirements
 
@@ -38,6 +41,8 @@ it, simply add the following line to your Podfile:
 ```swift
 pod "ImageSelector"
 ```
+
+:exclamation: This pod have a dependency to  [ios-permissions-service framework](https://github.com/lemberg/ios-permissions-service) so it will be installed to. You can read about it [here](https://github.com/lemberg/ios-permissions-service).
 
 ## How To Use
 
@@ -73,6 +78,40 @@ Name | Description
 ```
 
 4. Build. Run. Be happy! :tada: 
+
+## Customizing
+
+* You can add `Delete` option to action sheet wich presenting to the user via `showImageSources` method. By default, this method contains a `false` parameter for the delete option, so you can change it to `true`.  
+
+```swift
+     imageController.showImageSources(true)
+```
+
+* If you don't want to show actions sheet to the user, you can simply call `pickFromGallery()` or `pickFromCamera()` to show image picker. 
+
+* You can localise action sheet or give it your custom messages by creating custom `ImagePickerControllerConfiguration`.  After it, you need to put into the init method of `ImagePickerController`. 
+
+> If you don't create custom configuration default value will be used. 
+
+```swift
+
+     let configuration = ImagePickerControllerConfiguration()
+     configuration.actionSheetTitle = "Select photo"
+     configuration.actionSheetMessage = "Select image from proposed sources"
+     configuration.cameraActionTitle = "Take a photo"
+     configuration.galleryActionTitle = "Chose a photo"
+     configuration.removeActionTitle = "Remove a photo"
+     configuration.camera = .front
+
+     let picker = ImagePickerController(imageSelector: self, configuration())
+```
+
+By adding custom configuration you can change default camera source too. 
+
+```swift
+      configuration.camera = .front
+
+```
 
 ## Example Project
 
