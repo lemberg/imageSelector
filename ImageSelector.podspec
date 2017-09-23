@@ -38,5 +38,7 @@ Allow to quick add image selection from gallery or camera without any pain imple
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'PermissionsService'
+  s.dependency 'PermissionsService/Camera'
+  s.dependency 'PermissionsService/Gallery'
+
 end

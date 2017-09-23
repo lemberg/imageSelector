@@ -25,15 +25,12 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8BB18DBE46040D2EFDCA261D /* Pods-ImageSelector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSelector_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSelector_Tests/Pods-ImageSelector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		92C15CF30011BD3DF0D76FB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		962EE757CCD9BBCC2FC2F84A /* Pods-ImageSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSelector_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSelector_Example/Pods-ImageSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		96BFE07D0A6EDB34759CDA9C /* ImageSelector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ImageSelector.podspec; path = ../ImageSelector.podspec; sourceTree = "<group>"; };
 		BC0F81BB8F9B4C945825887D /* Pods_ImageSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6F58413B253305055247A11 /* Pods-ImageSelector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSelector_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSelector_Tests/Pods-ImageSelector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE7645471EF2ADF100C56761 /* Example.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example.storyboard; sourceTree = "<group>"; };
 		F0CE5016E6563B1F2A299CFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F6CD56DEE96A2705BD17B011 /* Pods_ImageSelector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageSelector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				BC0F81BB8F9B4C945825887D /* Pods_ImageSelector_Example.framework */,
-				F6CD56DEE96A2705BD17B011 /* Pods_ImageSelector_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,8 +127,6 @@
 			children = (
 				418B87DCA98030E1B031192B /* Pods-ImageSelector_Example.debug.xcconfig */,
 				962EE757CCD9BBCC2FC2F84A /* Pods-ImageSelector_Example.release.xcconfig */,
-				8BB18DBE46040D2EFDCA261D /* Pods-ImageSelector_Tests.debug.xcconfig */,
-				C6F58413B253305055247A11 /* Pods-ImageSelector_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -230,13 +224,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageSelector_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5970BD7ED01896B457D69494 /* [CP] Embed Pods Frameworks */ = {
@@ -245,9 +242,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ImageSelector_Example/Pods-ImageSelector_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSelector/ImageSelector.framework",
+				"${BUILT_PRODUCTS_DIR}/PermissionsService/PermissionsService.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSelector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PermissionsService.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
