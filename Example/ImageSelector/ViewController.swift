@@ -47,11 +47,11 @@ extension ViewController: ImageSelector {
     }
     
     func imageSelectionCanceled() {
-        
+        //do something
     }
     
     func imageDeleted() {
-        
+        //do something
     }
     
     func editingAllowed() -> Bool {

@@ -9,7 +9,7 @@ import Foundation
 
 public protocol ImageSelector: class {
     
-    var presentingController:UIViewController? { get }
+    var presentingController: UIViewController? { get }
     func imageSelected(_ image:UIImage)
     func imageSelectionCanceled()
     func imageDeleted()

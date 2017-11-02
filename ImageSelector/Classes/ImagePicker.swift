@@ -8,8 +8,7 @@
 import UIKit
 import PermissionsService
 
-public
-protocol ImagePicker: class {
+public protocol ImagePicker: class {
     
     func showImageSources(_ withDeleteOption:Bool)
     func pickFromGallery()
@@ -32,10 +31,7 @@ public struct CameraDefaultMessages: ServiceMessages {
     public var deniedMessage: String = "Access to camera denied"
 }
 
-
-
-extension UIViewController: ServiceDisplay {
-    
+extension UIViewController: Permissible {
     public func showAlert(vc: UIAlertController) {
         self.present(vc, animated: true, completion: nil)
     }
@@ -64,8 +60,6 @@ public class ImagePickerController: NSObject, UINavigationControllerDelegate, Im
         let galleryAction = UIAlertAction(title: configuration.galleryActionTitle, style: .default) { (action) -> Void in
             self.pickFromGallery()
         }
-        
-
         
         let cancelAction = UIAlertAction(title: configuration.cancelActionTitle, style: .cancel) { (action) -> Void in
         }

@@ -4,7 +4,7 @@ use_frameworks!
 target 'ImageSelector_Example' do
     
   pod 'ImageSelector', :path => '../'
-  pod 'PermissionsService/Camera'
-  pod 'PermissionsService/Gallery'
+  pod 'PermissionsService/Camera', :git => 'https://github.com/lemberg/ios-permissions-service', :branch => 'swift3'
+  pod 'PermissionsService/Gallery', :git => 'https://github.com/lemberg/ios-permissions-service', :branch => 'swift3'
 
 end
