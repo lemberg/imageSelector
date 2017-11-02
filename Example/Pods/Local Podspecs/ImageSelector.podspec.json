@@ -20,7 +20,10 @@
   },
   "source_files": "ImageSelector/Classes/**/*",
   "dependencies": {
-    "PermissionsService": [
+    "PermissionsService/Camera": [
+
+    ],
+    "PermissionsService/Gallery": [
 
     ]
   }

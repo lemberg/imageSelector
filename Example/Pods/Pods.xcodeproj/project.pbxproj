@@ -10,24 +10,24 @@
 		0043FCB11ECE35AF5C5B2792C0A6CA3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA878213E988487B7B43B4EC87CCD44 /* Foundation.framework */; };
 		17AFDAE752D19BB6588719366744F908 /* Pods-ImageSelector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BF5E420129FFE682480E753A336742 /* Pods-ImageSelector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184C95332492F68A8F664194AF154D22 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575FF1FDDC530FCA80A8BE7F6F3DB8E5 /* ImagePicker.swift */; };
+		194BC585A14397693442B75B122C0AE2 /* PermissionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF4E393DC26B048FD9EEE8CE71EFFDE /* PermissionConfiguration.swift */; };
+		1CCF50754F18220505BF820E45DBD771 /* PermissionsService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A79039537207D3839B735E2BFF27550F /* PermissionsService-dummy.m */; };
 		2D0C70A7239AEBF7EA8F78F33277A2A7 /* Pods-ImageSelector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 421813E4F993351812793DC8CBA160F3 /* Pods-ImageSelector_Example-dummy.m */; };
-		3D9BA62BF222398D1503903C9CC0E097 /* ServiceDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221A8ED43C2E5BF441C560D96F28C02 /* ServiceDisplay.swift */; };
-		42FC825CEAF595C668973ED875903EB0 /* PermissionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A2EC578DE9B1411C0CC1A026DC573C /* PermissionConfiguration.swift */; };
+		45E758A80E16D83F2B80CA0B869C2C2C /* Permissible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F78B5B2311EC88F76828BA986998A8A /* Permissible.swift */; };
 		4FDFBDA348CE56CD9BE1E16F6AEE6B88 /* ImageSelector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A67052B65AFE17D32DF72853C41296C1 /* ImageSelector-dummy.m */; };
-		51410D74E5F7FD28B32DBB7CD1C7A69F /* PermissionsService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A79039537207D3839B735E2BFF27550F /* PermissionsService-dummy.m */; };
+		5335982DA26127E6366CFCAF3D2DC446 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C26BAE4568BB992CF7A65B9EE5BDC /* Gallery.swift */; };
 		53E4A2651F6E9C7B77C8A90CAF054C95 /* ImageSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E1B4FA0A8551A2340C42A4D65054D3 /* ImageSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5772E5157BD559E9966D49EBB247BE66 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99352DD06CE7EE11ACBA28DAFA7D914 /* Camera.swift */; };
+		79D32423457138851265A15A6EA4F841 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC361DA9F0937628584ED585E40AA8 /* Extensions.swift */; };
 		80023AB66E427CDC8070058049EF3905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA878213E988487B7B43B4EC87CCD44 /* Foundation.framework */; };
+		800EC9707F405119F028CCC9A79D2713 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D87CF04BF175E0764B9138F112290E /* PermissionService.swift */; };
 		832A7ED7D82E4AC09A3E7AC8B9EF45B1 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD7334821B87129051131DE1CA40B6 /* UIImage+FixOrientation.swift */; };
 		859D66EF9D5CFB6AF6C66808B9F156F2 /* PermissionsService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E370FA7E3C61167AC1D87C92E82611 /* PermissionsService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D559396E203E13A33F0AE4750156760 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC08FA6542E7F95B1D0A95B2BFE6A4 /* PermissionService.swift */; };
+		BC6BF9A73FCFA475C6058A0269E262FB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99352DD06CE7EE11ACBA28DAFA7D914 /* Camera.swift */; };
 		BC7E9D39CA3E17E6F618A884E37E556C /* ImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A81563387F2C1FB3BFCE3C69B2EAB9A /* ImageSelector.swift */; };
 		BD1D863593DB6331D7EBA789DA2FAA78 /* PermissionsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CA22CADFED5047826D0F35C76DDDA6 /* PermissionsService.framework */; };
+		E9D3F90B36DA7782B92A11496F851786 /* PermissionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2000D92E13425D4D1DDFC734B4D831 /* PermissionResult.swift */; };
 		EA57D2A6837FE66BE814404B8E886747 /* ImagePickerControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD906309FD34D374FC8ADE48DD36D81 /* ImagePickerControllerConfiguration.swift */; };
-		EB919C5DCB96334824C354AFDCF2F5AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7E405198BC0560B0BD7A04D195950 /* Extensions.swift */; };
-		F2495947E2F847A214C43C7F00235D73 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C26BAE4568BB992CF7A65B9EE5BDC /* Gallery.swift */; };
 		FAA5C11635EED50D2ABE23BADCC020AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA878213E988487B7B43B4EC87CCD44 /* Foundation.framework */; };
-		FBC05CDDBFB45726B375EB19EA30A34C /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD87EE8545368E68D24C47A31AF5FF /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,32 +60,32 @@
 		12E1B4FA0A8551A2340C42A4D65054D3 /* ImageSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSelector-umbrella.h"; sourceTree = "<group>"; };
 		14417E0FB886269FC232C845AD7D72F9 /* Pods-ImageSelector_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageSelector_Example-resources.sh"; sourceTree = "<group>"; };
 		1834EE40912505699FBF1E918CB1B76F /* Pods-ImageSelector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageSelector_Example-frameworks.sh"; sourceTree = "<group>"; };
-		18B7E405198BC0560B0BD7A04D195950 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Core/Extensions.swift; sourceTree = "<group>"; };
+		1BAC361DA9F0937628584ED585E40AA8 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Core/Extensions.swift; sourceTree = "<group>"; };
 		1D998EE9CE87BBEFF95BF5BE18CC2E74 /* ImageSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ImageSelector.modulemap; sourceTree = "<group>"; };
 		1E8B988C293897A4D46D2E41FB143735 /* Pods-ImageSelector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageSelector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		22943D04F4CE6215DEBBF741053B0A3F /* PermissionsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PermissionsService.framework; path = PermissionsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2000D92E13425D4D1DDFC734B4D831 /* PermissionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionResult.swift; path = Source/Core/PermissionResult.swift; sourceTree = "<group>"; };
 		3BFFCD332997DF82BAC30F08499E0AF1 /* PermissionsService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionsService-prefix.pch"; sourceTree = "<group>"; };
 		421813E4F993351812793DC8CBA160F3 /* Pods-ImageSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageSelector_Example-dummy.m"; sourceTree = "<group>"; };
+		4F78B5B2311EC88F76828BA986998A8A /* Permissible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permissible.swift; path = Source/Core/Permissible.swift; sourceTree = "<group>"; };
 		509C3CF526E9665EB8E6B5C283079A88 /* Pods-ImageSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		575FF1FDDC530FCA80A8BE7F6F3DB8E5 /* ImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ImageSelector/Classes/ImagePicker.swift; sourceTree = "<group>"; };
 		62BF5E420129FFE682480E753A336742 /* Pods-ImageSelector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageSelector_Example-umbrella.h"; sourceTree = "<group>"; };
 		6A81563387F2C1FB3BFCE3C69B2EAB9A /* ImageSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSelector.swift; path = ImageSelector/Classes/ImageSelector.swift; sourceTree = "<group>"; };
 		75E370FA7E3C61167AC1D87C92E82611 /* PermissionsService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionsService-umbrella.h"; sourceTree = "<group>"; };
+		76D87CF04BF175E0764B9138F112290E /* PermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionService.swift; path = Source/Core/PermissionService.swift; sourceTree = "<group>"; };
 		8180603113E450C0A5160989C72136C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		858C8DDFB240929690D2F9B53680ED02 /* Pods_ImageSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImageSelector_Example.framework; path = "Pods-ImageSelector_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CCD87EE8545368E68D24C47A31AF5FF /* Structs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = Source/Core/Structs.swift; sourceTree = "<group>"; };
-		9221A8ED43C2E5BF441C560D96F28C02 /* ServiceDisplay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceDisplay.swift; path = Source/Core/ServiceDisplay.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FF4E393DC26B048FD9EEE8CE71EFFDE /* PermissionConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionConfiguration.swift; path = Source/Core/PermissionConfiguration.swift; sourceTree = "<group>"; };
 		A67052B65AFE17D32DF72853C41296C1 /* ImageSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSelector-dummy.m"; sourceTree = "<group>"; };
 		A79039537207D3839B735E2BFF27550F /* PermissionsService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PermissionsService-dummy.m"; sourceTree = "<group>"; };
 		A9CA22CADFED5047826D0F35C76DDDA6 /* PermissionsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5E7D54742E15518B623E08DCD6E7FD /* Pods-ImageSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B6DC08FA6542E7F95B1D0A95B2BFE6A4 /* PermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionService.swift; path = Source/Core/PermissionService.swift; sourceTree = "<group>"; };
 		C426A0BCAE3165DAB067F913E0A3121B /* PermissionsService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PermissionsService.xcconfig; sourceTree = "<group>"; };
 		C723F594E8C5EC56669DD29A8CCF9212 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97C26BAE4568BB992CF7A65B9EE5BDC /* Gallery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gallery.swift; path = Source/Gallery/Gallery.swift; sourceTree = "<group>"; };
 		C99352DD06CE7EE11ACBA28DAFA7D914 /* Camera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = Source/Camera/Camera.swift; sourceTree = "<group>"; };
-		D2A2EC578DE9B1411C0CC1A026DC573C /* PermissionConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionConfiguration.swift; path = Source/Core/PermissionConfiguration.swift; sourceTree = "<group>"; };
 		E915C3B7338D2DE8A62C0C5113C8186E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBA878213E988487B7B43B4EC87CCD44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EBCD7334821B87129051131DE1CA40B6 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+FixOrientation.swift"; path = "ImageSelector/Classes/UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
@@ -132,6 +132,18 @@
 				FDDB379E8DF75CD00D50C056983EC460 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		119236A5881D0046D9142CF5F32C52F2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1BAC361DA9F0937628584ED585E40AA8 /* Extensions.swift */,
+				4F78B5B2311EC88F76828BA986998A8A /* Permissible.swift */,
+				9FF4E393DC26B048FD9EEE8CE71EFFDE /* PermissionConfiguration.swift */,
+				3B2000D92E13425D4D1DDFC734B4D831 /* PermissionResult.swift */,
+				76D87CF04BF175E0764B9138F112290E /* PermissionService.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		12D2B62F8DA2D30E62E133023DBBA8B0 /* Support Files */ = {
@@ -194,18 +206,6 @@
 			path = "Example/Pods/Target Support Files/ImageSelector";
 			sourceTree = "<group>";
 		};
-		65AD454397439395EF83FF56F978D9E3 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				18B7E405198BC0560B0BD7A04D195950 /* Extensions.swift */,
-				D2A2EC578DE9B1411C0CC1A026DC573C /* PermissionConfiguration.swift */,
-				B6DC08FA6542E7F95B1D0A95B2BFE6A4 /* PermissionService.swift */,
-				9221A8ED43C2E5BF441C560D96F28C02 /* ServiceDisplay.swift */,
-				8CCD87EE8545368E68D24C47A31AF5FF /* Structs.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
 		73DA78D2B8B671145233999419636FDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				166BDDDA12879F9BBAFFB607DC5155F0 /* Camera */,
-				65AD454397439395EF83FF56F978D9E3 /* Core */,
+				119236A5881D0046D9142CF5F32C52F2 /* Core */,
 				39EBD8D497010892837453870DE38E65 /* Gallery */,
 				12D2B62F8DA2D30E62E133023DBBA8B0 /* Support Files */,
 			);
@@ -321,7 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75C43E163B8EC5D8050C6EEAEF76EA38 /* Build configuration list for PBXNativeTarget "PermissionsService" */;
 			buildPhases = (
-				A3B5789CAA26F3CBFB66747D5C35A7F7 /* Sources */,
+				D3217A83F363F038269FB3872DA1E4FC /* Sources */,
 				C0E8D6C1CD897692A0FF945DD3F1E8ED /* Frameworks */,
 				6840210A4304AD9B43ADB5DACF84FA60 /* Headers */,
 			);
@@ -420,18 +420,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3B5789CAA26F3CBFB66747D5C35A7F7 /* Sources */ = {
+		D3217A83F363F038269FB3872DA1E4FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5772E5157BD559E9966D49EBB247BE66 /* Camera.swift in Sources */,
-				EB919C5DCB96334824C354AFDCF2F5AB /* Extensions.swift in Sources */,
-				F2495947E2F847A214C43C7F00235D73 /* Gallery.swift in Sources */,
-				42FC825CEAF595C668973ED875903EB0 /* PermissionConfiguration.swift in Sources */,
-				9D559396E203E13A33F0AE4750156760 /* PermissionService.swift in Sources */,
-				51410D74E5F7FD28B32DBB7CD1C7A69F /* PermissionsService-dummy.m in Sources */,
-				3D9BA62BF222398D1503903C9CC0E097 /* ServiceDisplay.swift in Sources */,
-				FBC05CDDBFB45726B375EB19EA30A34C /* Structs.swift in Sources */,
+				BC6BF9A73FCFA475C6058A0269E262FB /* Camera.swift in Sources */,
+				79D32423457138851265A15A6EA4F841 /* Extensions.swift in Sources */,
+				5335982DA26127E6366CFCAF3D2DC446 /* Gallery.swift in Sources */,
+				45E758A80E16D83F2B80CA0B869C2C2C /* Permissible.swift in Sources */,
+				194BC585A14397693442B75B122C0AE2 /* PermissionConfiguration.swift in Sources */,
+				E9D3F90B36DA7782B92A11496F851786 /* PermissionResult.swift in Sources */,
+				800EC9707F405119F028CCC9A79D2713 /* PermissionService.swift in Sources */,
+				1CCF50754F18220505BF820E45DBD771 /* PermissionsService-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
