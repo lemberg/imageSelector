@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ImageSelector'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Allow to quick add image selection from gallery or camera.'
 
 # This description is used to generate tags and improve search results.
