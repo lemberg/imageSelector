@@ -56,11 +56,11 @@
 
 /* Begin PBXFileReference section */
 		06C6FF56E5780AC401BF0C886EB54CF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0D2D4B892079A92F870061963F06F6C8 /* ImageSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageSelector.framework; path = ImageSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2D4B892079A92F870061963F06F6C8 /* ImageSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1701E0594297C4166BBE349C57EFFB02 /* Pods-ImageSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1BAC361DA9F0937628584ED585E40AA8 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Core/Extensions.swift; sourceTree = "<group>"; };
 		20FD79F62B3A4DA734E0D951961E0419 /* ImageSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSelector-dummy.m"; sourceTree = "<group>"; };
-		22943D04F4CE6215DEBBF741053B0A3F /* PermissionsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PermissionsService.framework; path = PermissionsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22943D04F4CE6215DEBBF741053B0A3F /* PermissionsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C776C35F5185BC43390DDC3861A181 /* PermissionsService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PermissionsService-dummy.m"; sourceTree = "<group>"; };
 		232A0D996B505D26BC0CEAD6B0EC75FE /* PermissionsService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionsService-prefix.pch"; sourceTree = "<group>"; };
 		2E28002F90DF284F0AFAC6982F0189FF /* Pods-ImageSelector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ImageSelector_Example.modulemap"; sourceTree = "<group>"; };
@@ -79,15 +79,15 @@
 		76D87CF04BF175E0764B9138F112290E /* PermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionService.swift; path = Source/Core/PermissionService.swift; sourceTree = "<group>"; };
 		77D726846BA594ED9EB5E0841B1E116E /* Pods-ImageSelector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageSelector_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7BD4137A16B3E9ACECA60EB8F03C7EC7 /* ImageSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSelector-umbrella.h"; sourceTree = "<group>"; };
-		858C8DDFB240929690D2F9B53680ED02 /* Pods_ImageSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImageSelector_Example.framework; path = "Pods-ImageSelector_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		858C8DDFB240929690D2F9B53680ED02 /* Pods_ImageSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FE8185FFA9B998EBD8DBEC742AB2EB /* ImageSelector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageSelector.xcconfig; sourceTree = "<group>"; };
 		8B759D13A7B577FFC5F7C37BDD7177E0 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+FixOrientation.swift"; path = "ImageSelector/Classes/UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FF4E393DC26B048FD9EEE8CE71EFFDE /* PermissionConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionConfiguration.swift; path = Source/Core/PermissionConfiguration.swift; sourceTree = "<group>"; };
-		A980A4DE9995FCEFAEC96666B892C81E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A980A4DE9995FCEFAEC96666B892C81E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9CA22CADFED5047826D0F35C76DDDA6 /* PermissionsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E2E3701A173C6F78123F184F723C09 /* ImageSelector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSelector-prefix.pch"; sourceTree = "<group>"; };
-		B43C08CC8FB0577F774EB99B8EB9C3BF /* ImageSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ImageSelector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B43C08CC8FB0577F774EB99B8EB9C3BF /* ImageSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ImageSelector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B6D7F68DC28EC4AFB84EC9C65597C611 /* Pods-ImageSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C97C26BAE4568BB992CF7A65B9EE5BDC /* Gallery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gallery.swift; path = Source/Gallery/Gallery.swift; sourceTree = "<group>"; };
 		C99352DD06CE7EE11ACBA28DAFA7D914 /* Camera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = Source/Camera/Camera.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		D6D35320E371746C5B3B8FE294DD3E76 /* ImagePickerControllerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerControllerConfiguration.swift; path = ImageSelector/Classes/ImagePickerControllerConfiguration.swift; sourceTree = "<group>"; };
 		E1C63150B4EF5CE669DC817544D23A9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84436CD190851C141E6AE1A90DC67D6 /* PermissionsService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PermissionsService.modulemap; sourceTree = "<group>"; };
-		FA37F3EEE7CED40CF5ED000C3223D2BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FA37F3EEE7CED40CF5ED000C3223D2BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FBD71EDB9C2D982594E76339C16B1AE2 /* ImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ImageSelector/Classes/ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,7 +255,6 @@
 				39EBD8D497010892837453870DE38E65 /* Gallery */,
 				4BAC79B7E5A3A80F6DC67E5944003E5A /* Support Files */,
 			);
-			name = PermissionsService;
 			path = PermissionsService;
 			sourceTree = "<group>";
 		};
@@ -393,6 +392,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					8F32BA8E0F34C142F84731EE1AD41F9B = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -596,7 +600,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -729,7 +734,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

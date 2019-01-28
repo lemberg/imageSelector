@@ -24,7 +24,7 @@ public class ImagePickerControllerConfiguration: NSObject {
     public var cameraMessages: ServiceMessages = CameraDefaultMessages()
     public var galleryMessages: ServiceMessages = GalleryDefaultMessages()
     
-    public var camera: UIImagePickerControllerCameraDevice = .front
+    public var camera: UIImagePickerController.CameraDevice = .front
     
     public override init() {
         super.init()
