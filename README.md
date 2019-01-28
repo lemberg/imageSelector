@@ -42,7 +42,7 @@ it, simply add the following line to your Podfile:
 pod "ImageSelector"
 ```
 
-:exclamation: This pod have a dependency to  [ios-permissions-service framework](https://github.com/lemberg/ios-permissions-service) so it will be installed to. You can read about it [here](https://github.com/lemberg/ios-permissions-service).
+:exclamation: This pod have a dependency to  [ios-permissions-service framework](https://github.com/lemberg/ios-permissions-service) so it will be installed too. You can read about it [here](https://github.com/lemberg/ios-permissions-service).
 
 ## How To Use
 

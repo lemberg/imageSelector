@@ -8,8 +8,7 @@
 import UIKit
 import PermissionsService
 
-public
-protocol ImagePicker: class {
+public protocol ImagePicker: class {
     
     func showImageSources(_ withDeleteOption:Bool)
     func pickFromGallery()
@@ -32,10 +31,7 @@ public struct CameraDefaultMessages: ServiceMessages {
     public var deniedMessage: String = "Access to camera denied"
 }
 
-
-
-extension UIViewController: ServiceDisplay {
-    
+extension UIViewController: Permissible {
     public func showAlert(vc: UIAlertController) {
         self.present(vc, animated: true, completion: nil)
     }
@@ -64,8 +60,6 @@ public class ImagePickerController: NSObject, UINavigationControllerDelegate, Im
         let galleryAction = UIAlertAction(title: configuration.galleryActionTitle, style: .default) { (action) -> Void in
             self.pickFromGallery()
         }
-        
-
         
         let cancelAction = UIAlertAction(title: configuration.cancelActionTitle, style: .cancel) { (action) -> Void in
         }
@@ -122,7 +116,7 @@ public class ImagePickerController: NSObject, UINavigationControllerDelegate, Im
         let cameraController = UIImagePickerController()
         cameraController.allowsEditing = imageSelector?.editingAllowed() ?? false
         cameraController.delegate = self
-        cameraController.sourceType = UIImagePickerControllerSourceType.camera
+        cameraController.sourceType = UIImagePickerController.SourceType.camera
         cameraController.cameraDevice = configuration.camera
         self.imageSelector?.presentingController?.showDetailViewController(cameraController, sender: self)
     }
@@ -132,30 +126,33 @@ public class ImagePickerController: NSObject, UINavigationControllerDelegate, Im
         let cameraController = UIImagePickerController()
         cameraController.allowsEditing = imageSelector?.editingAllowed() ?? false
         cameraController.delegate = self
-        cameraController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        cameraController.sourceType = UIImagePickerController.SourceType.photoLibrary
         self.imageSelector?.presentingController?.showDetailViewController(cameraController, sender: self)
     }
 }
 
 extension ImagePickerController: UIImagePickerControllerDelegate {
     
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         defer {
             self.imageSelector?.presentingController?.dismiss(animated: true, completion: nil)
         }
         
         var selectedImage:UIImage?
         
-        if picker.sourceType == UIImagePickerControllerSourceType.camera {
-            if let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+        if picker.sourceType == UIImagePickerController.SourceType.camera {
+            if let editedImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.editedImage)] as? UIImage {
                 selectedImage = editedImage.fixImageOrientation()
-            } else if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            } else if let originalImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
                 selectedImage = originalImage.fixImageOrientation()
             }
         } else {
-            if let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+            if let editedImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.editedImage)] as? UIImage {
                 selectedImage = editedImage.fixImageOrientation()
-            } else if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            } else if let originalImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
                 selectedImage = originalImage.fixImageOrientation()
             }
         }
@@ -170,4 +167,14 @@ extension ImagePickerController: UIImagePickerControllerDelegate {
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.imageSelector?.presentingController?.dismiss(animated: true, completion: nil)
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
 }

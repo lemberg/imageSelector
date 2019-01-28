@@ -12,7 +12,7 @@
     "overswift": "sergiy.loza@lemberg.co.uk"
   },
   "source": {
-    "git": "https://github.com/overswift/ImageSelector.git",
+    "git": "https://github.com/lemberg/imageSelector.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -20,7 +20,10 @@
   },
   "source_files": "ImageSelector/Classes/**/*",
   "dependencies": {
-    "PermissionsService": [
+    "PermissionsService/Camera": [
+
+    ],
+    "PermissionsService/Gallery": [
 
     ]
   }

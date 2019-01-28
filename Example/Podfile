@@ -4,10 +4,7 @@ use_frameworks!
 target 'ImageSelector_Example' do
     
   pod 'ImageSelector', :path => '../'
-  pod 'PermissionsService'
-  
-  target 'ImageSelector_Tests' do
-    inherit! :search_paths
-    pod 'FBSnapshotTestCase'
-  end
+  pod 'PermissionsService/Camera', :git => 'https://github.com/lemberg/ios-permissions-service'
+  pod 'PermissionsService/Gallery', :git => 'https://github.com/lemberg/ios-permissions-service'
+
 end
